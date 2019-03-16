@@ -4,7 +4,7 @@ const cfg = require('../index.json');
 const prefix = ("/");
 
 bot.on('ready', function () {
-    console.log("RichEmbed ready")
+    console.log("RichEmbed est près")
 });
 function couleur(){
     return  "#" + Math.floor(Math.random()*16777215).toString(16);
@@ -22,8 +22,8 @@ bot.on('message', function(msg){
                 .setDescription("La demande est : " + args.join(" "))
                 .setColor(couleur())
                 //.setImage('https://cdn.pixabay.com/photo/2016/06/18/17/42/image-1465348_960_720.jpg')
-                .setThumbnail('https://yt3.ggpht.com/-izK19l8SYSQ/AAAAAAAAAAI/AAAAAAAAAVo/JQJ6p9FPYz4/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg')
-                .setURL('https://www.youtube.com/c/alexpgm')
+                .setThumbnail('https://pbs.twimg.com/profile_images/1015700664289292290/vCE2Rv2e_400x400.jpg')
+                .setURL('https://www.youtube.com/channel/UCERAAnMluAmPf7qOx_9pC5A')
                 .setTimestamp()
                 .setFooter("Si il change de nom :" + msg.author.tag ,msg.author.displayAvatarURL);
                 msg.channel.send(RichEmbed);
